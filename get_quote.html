@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Deepak Kumar BCA 1A</title>
+        <style>
+            
+            body{
+                background-color: rgb(101, 215, 107);
+            }
+
+            .container-1{
+                margin:20px;
+                padding:10px;
+            }
+
+            .full-name{
+                padding-left:27px;
+            }
+        </style>    
+        <script>
+            function m_over1(x){
+                x.style.backgroundColor="lightblue";
+            }
+
+            function m_over2(x){
+                x.style.backgroundColor="lightgrey";
+            }
+
+            function m_out1(x){
+                x.style.backgroundColor="white";
+            }
+        </script>
+    </head>
+<body bgcolor="white">
+<h1 id="heading1"><u>ASK YOUR QUERY</u></h1>
+<form method="post" action="">
+    <div class="container-1">
+        <div class="full-name">
+            <p>Full Name:
+            <input type="text" name="Full Name" onfocus="m_over1(this)" onblur="m_out1(this)">
+        </div>
+        </p>
+        <p>Phone Number:
+            <input type="text" name="Phone number" onfocus="m_over1(this)" onblur="m_out1(this)">
+        </p> 
+        <p>Ask your Qn:<br>
+            <textarea name="Question" cols="24" rows="12" onfocus="m_over2(this)"></textarea>
+        </p>
+        <input type="submit">
+        <input type="reset">
+    </div>
+    <!--<a href="#" onclick="window.open('Home_page.html', 'home_page', 'width=400,height=150');">Test</a>-->
+</form>
+</body>
+</html>
